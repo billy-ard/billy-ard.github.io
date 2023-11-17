@@ -5,17 +5,11 @@ let nav_home  = document.getElementById("nav-home");
 let nav_about  = document.getElementById("nav-about");
 let nav_project = document.getElementById("nav-project");
 let nav_contact = document.getElementById("nav-contact");
-let current_display = null;
+let current_display = document.getElementById("about");
 
 function switchDisplay (evt){
     let target = evt.currentTarget.myParam;
-    if(target == "reset"){
-        about.style.display = 'none';
-        project.style.display = 'none';
-        contact.style.display = 'none';
-        return null;
-    }
-
+    
     //assign class no-display if current_display element not null
     if(current_display !== null){
         current_display.style.display = 'none'
@@ -33,6 +27,3 @@ nav_project.myParam = project;
 
 nav_contact.addEventListener('click',switchDisplay)
 nav_contact.myParam = contact;
-
-nav_home.addEventListener('click',switchDisplay)
-nav_home.myParam = "reset";
