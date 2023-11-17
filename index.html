@@ -1,9 +1,91 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="./resource/css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Karla&display=swap" rel="stylesheet">
+  </head>
 
-<body>
-  <h1>Billy Ardiwan!</h1>
-  <p>Welcome to my website! :)</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <h1>Billy Ardiwan</h1>
+          <h2>Web Developer</h2>
+        </div>
+        <div class="navbar">
+          <nav>
+            <ul>
+              <li><a id="nav-home" href="#">Home</a></li>
+              <li><a id="nav-about" href="#">About Me</a></li>
+              <li><a id="nav-project" href="#">Project</a></li>
+              <li><a id="nav-contact" href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>  
+      
+      <main>        
+        <div class="description">
+          <section>
+              <p>
+                Hello there! I'm Billy, Born in 1996 Indonesia.
+              </p>
+              <p>
+                a frontend developer with a passion for crafting seamless digital experiences. I believe in the power of code to transform ideas into interactive and user-friendly interfaces. 
+              </p>
+          </section>
+        </div>
 
+        <div class="content">
+          <section>
+            <div id="about" class="about no-display">
+              <p>
+                My journey in web development is a continuous learning adventure, and I'm humbled by the opportunities to collaborate and contribute to meaningful projects. Let's code together and make the web a better place, one line at a time. 🚀
+              </p>
+            </div>
+
+            <div id="project"  class="project no-display">
+              <div class="card">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              </div>
+              <div class="card">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              </div>
+              <div class="card">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              </div>
+              <div class="card">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              </div>
+            </div>
+
+            <div id="contact"  class="contact no-display">
+              <a href="#">
+                <div class="card">
+                    <img src="./resource/image/github-mark.png">
+                    <span>Github</span>
+                </div>
+              </a>
+              
+              <a href="#">
+                <div class="card">
+                  <img src="./resource/image/github-mark.png">
+                  <span>Linkendin</span>
+                </div>
+              </a>
+            </div>
+        </div>
+      </main>
+      
+      <footer>
+        <p>Created at 17/11/2023 - Indonesia</p>
+      </footer>
+    </div>
+    <script src="./resource/js/index.js"></script>
+  </body>
 </html>

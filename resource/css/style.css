@@ -1,0 +1,165 @@
+/* Remove padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    margin:5em;
+    font-family: 'Inconsolata',sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+h1{
+    font-size: 4em;
+    font-family: 'Karla',sans-serif;    
+    letter-spacing: 0.1em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+@media only screen and (max-width:460px){
+    body{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 3em;
+        letter-spacing: 0em;
+    }
+    
+    h2{
+        font-size: 1em;
+    }
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+nav ul li{
+    list-style-type: none;
+    margin: 1em;
+}
+
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+main{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    height: 100%;
+    flex: 0 0 2em;
+    justify-content: space-evenly;
+}
+
+.description{
+    max-width: 30%;
+    display: flex;
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+    line-height: 2em;
+    padding: 0.5em;
+}
+
+
+.content{
+    max-width: 65%;
+    min-width: 65%;
+    display: flex;
+    border: 3px solid black;
+    padding: 0.5em;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width:1150px){
+    .description{
+        max-width: 30%;
+    }
+    
+    
+    .content{
+        max-width: 63%;
+    }
+}
+
+@media only screen and (max-width:769px){
+    .description{
+        max-width: 30%;
+    }
+
+    .content{
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .description{
+        max-width: none;
+        min-width: 100%;
+        margin-bottom: 1em;
+    }
+ 
+    .content{
+        max-width: none;
+        min-width: 100%;
+    }
+}
+
+
+.about{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    line-height: 2em;
+}
+
+.project{
+    display: none;
+    min-height: 100%;
+    flex-flow: wrap;
+}
+
+.card{
+    max-width: 25em;
+    border: 3px solid black;
+    margin:0.5em;
+    padding: 0.5em;
+}
+
+.contact{
+    display: none;
+    flex-flow: column wrap;
+}
+
+.contact .card img{
+    width: 2em;
+    height: 2em;
+}
+
+.contact .card span{
+    position: relative;
+    bottom: 0.5em;
+}
+
+footer{
+    position: relative;
+    text-align: center;
+}
